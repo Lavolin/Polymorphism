@@ -33,7 +33,7 @@ namespace E02VehiclesExtension
 
         public double TankCapacity { get; }
 
-
+        public bool IsEmpty { get; set; }
         public bool CanDrive(double km)
             => this.FuelQuantity - (this.FuelConsumptionPerKm * km) >= 0;
 
@@ -53,6 +53,7 @@ namespace E02VehiclesExtension
             {
                 throw new ArgumentException("Fuel must be a positive number");
             }
+
             if (CanRefuel(amount))
             {
                 this.FuelQuantity += amount;
