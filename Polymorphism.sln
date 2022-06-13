@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animals", "Animals\Animals.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E01Vehicles", "E01Vehicles\E01Vehicles.csproj", "{1F0B51C0-4B47-4E0B-8B18-6DC25E8244DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E02VehiclesExtension", "E02VehiclesExtension\E02VehiclesExtension.csproj", "{7F148E9B-2325-4966-9FFD-C48010A81A51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1F0B51C0-4B47-4E0B-8B18-6DC25E8244DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F0B51C0-4B47-4E0B-8B18-6DC25E8244DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F0B51C0-4B47-4E0B-8B18-6DC25E8244DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F148E9B-2325-4966-9FFD-C48010A81A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F148E9B-2325-4966-9FFD-C48010A81A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F148E9B-2325-4966-9FFD-C48010A81A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F148E9B-2325-4966-9FFD-C48010A81A51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
