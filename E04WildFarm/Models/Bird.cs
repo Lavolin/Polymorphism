@@ -13,5 +13,8 @@ namespace E04WildFarm
         }
 
         public double WingSize { get; set; }
+
+        public override string ToString()
+            => $"{this.GetType().Name} [{Name}, {WingSize}, {Weight}, {FoodEaten}]";
     }
 }

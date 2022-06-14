@@ -4,21 +4,21 @@ using System.Text;
 
 namespace E04WildFarm
 {
-    public class Dog : Mammal
+    public class Tiger : Feline
     {
-        private const double Modifier = 0.40;
-        public Dog(string name, double weight, string livingRegion) 
-            : base(name, weight, livingRegion)
+        private const double Modifier = 1.00;
+        public Tiger(string name, double weight, string livingRegion, string breed) 
+            : base(name, weight, livingRegion, breed)
         {
         }
-
-
         public override string ProduceSound()
-            => "Woof!";
+         => "ROAR!!!";
+
         public override void Eat(IFood food)
         {
             if (food is Meat)
             {
+
                 BaseEating(Modifier, food.Quantity);
 
 
@@ -29,8 +29,5 @@ namespace E04WildFarm
 
             }
         }
-
-        public override string ToString()
-            => $"{this.GetType().Name} [{Name}, {Weight}, {LivingRegion}, {FoodEaten}]";
     }
 }

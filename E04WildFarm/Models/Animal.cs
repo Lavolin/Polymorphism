@@ -13,15 +13,21 @@ namespace E04WildFarm
             
         }
 
-        public string Name {get; set;}
+        public string Name {get;}
 
-        public double Weight { get; set; }
+        public double Weight { get; protected set; }
 
-        public int FoodEaten { get; set; }
+        public int FoodEaten { get; protected set; }
 
-             
+        public abstract void Eat(IFood food);     
 
         public abstract string ProduceSound();
+
+        protected void BaseEating( double modifier, int qty)
+        {
+            this.Weight += qty * modifier;
+            this.FoodEaten += qty;
+        }
             
     }
 }

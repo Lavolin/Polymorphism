@@ -4,33 +4,27 @@ using System.Text;
 
 namespace E04WildFarm
 {
-    public class Dog : Mammal
+    public class Cat : Feline
     {
-        private const double Modifier = 0.40;
-        public Dog(string name, double weight, string livingRegion) 
-            : base(name, weight, livingRegion)
+        private const double Modifier = 0.30;
+        public Cat(string name, double weight, string livingRegion, string breed) 
+            : base(name, weight, livingRegion, breed)
         {
         }
 
-
         public override string ProduceSound()
-            => "Woof!";
+            => "Meow";
+
         public override void Eat(IFood food)
         {
-            if (food is Meat)
+            if (food is Vegetable || food is Meat)
             {
                 BaseEating(Modifier, food.Quantity);
-
-
             }
             else
             {
                 Exceptions.InvalidFoodException(this.GetType().Name, food.GetType().Name);
-
             }
         }
-
-        public override string ToString()
-            => $"{this.GetType().Name} [{Name}, {Weight}, {LivingRegion}, {FoodEaten}]";
     }
 }

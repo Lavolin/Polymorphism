@@ -12,6 +12,7 @@ namespace E04WildFarm
         int FoodEaten { get; }
 
         string ProduceSound();
-       
+        void Eat(IFood food);
+
     }
 }
