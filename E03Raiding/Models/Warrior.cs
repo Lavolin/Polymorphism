@@ -4,7 +4,17 @@ using System.Text;
 
 namespace E03Raiding
 {
-    public class Warrior
+    public class Warrior : BaseHero
     {
+        
+        public Warrior(string name) : base(name)
+        {
+        }
+
+        public override int Power => 100;
+        
+
+        public override string CastAbility()
+        => $"{base.CastAbility()} hit for {Power} damage";
     }
 }
